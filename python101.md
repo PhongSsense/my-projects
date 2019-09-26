@@ -13,7 +13,7 @@ To quickly comment multiple lines, use `command + /`
 ### Variables
 
 Data types:
-|Types           |       |           |            |
+|Types           |Types  |Types      |Types       |
 |----------------|-------|-----------|------------|
 | Text Type      | str   |           |            |
 | Numeric Types  | int   | float     | complex    |
