@@ -294,3 +294,59 @@ myfunc()
 
 print(x)
 ```
+
+## Classes
+Example:
+```
+class Dog:
+
+    # Initializer / Instance Attributes
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+```
+
+Use __init__ to initialise variables
+
+Class attribute:
+```
+class Dog:
+
+    # Class Attribute
+    species = 'mammal'
+
+    # Initializer / Instance Attributes
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+```
+
+Inheritance:
+```
+# Child class (inherits from Dog class)
+class RussellTerrier(Dog):
+    def run(self, speed):
+        return "{} runs {}".format(self.name, speed)
+```
+The isinstance() function is used to determine if an instance is also an instance of a certain parent class.
+
+Overriding:
+```
+>>> class Dog:
+...     species = 'mammal'
+...
+>>> class SomeBreed(Dog):
+...     pass
+...
+>>> class SomeOtherBreed(Dog):
+...     species = 'reptile'
+...
+>>> frank = SomeBreed()
+>>> frank.species
+'mammal'
+>>> beans = SomeOtherBreed()
+>>> beans.species
+'reptile'
+```
+The SomeBreed() class inherits the species from the parent class, while the SomeOtherBreed() class overrides the species, setting it to reptile.
+
