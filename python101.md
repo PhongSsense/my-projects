@@ -350,3 +350,32 @@ Overriding:
 ```
 The SomeBreed() class inherits the species from the parent class, while the SomeOtherBreed() class overrides the species, setting it to reptile.
 
+
+# Python Package Manager
+
+## Pip
+
+- It's the recommended tool for installing packages from the Python Package Index, PyPi
+- It may require that the system have compatible compilers, and possibly libraries, installed before invoking pip to succeed
+- Over 150 000 packages available
+
+## Conda
+- It's a cross platform package and environment manager that installs and manages conda packages
+- There's never a need to have a compiler available to install those packages
+- Not limited to Python software, may include C, C++ libraries, etc.
+- conda installs package which may contain software written in any language
+- Can create isolated environments that can contain different versions of Python and/or packages installed in them
+- Uses SAT solver to verify that all requirements of all packages installed in an environment are met
+- Takes more time
+- 1500 packages available
+- good for data science
+
+
+|                       | conda                   | pip                             |
+|-----------------------|-------------------------|---------------------------------|
+| manages               | binaries                | wheel or source                 |
+| can require compilers | no                      | yes                             |
+| package types         | any                     | python only                     |
+| create environment    | yes, built-in           | no, requires virtualenv or venv |
+| dependency checks     | yes                     | no                              |
+| package sources       | Anaconda repo and cloud | PyPi                            |
